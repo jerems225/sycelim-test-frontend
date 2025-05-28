@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0c1214;
+  color: #0c1214;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login_form_container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #0c1214;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0c1214;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #0c1214;
+  background-color: #f7f7f7;
+  transition: all 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #8bc3bf;
+  outline: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #0c1214;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #8bc3bf;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.remember-me-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #333; /* Couleur douce et moderne */
+  font-weight: 600;
+}
+
+.remember-me-container label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.remember-me-container label:hover {
+  color: #0c1214; /* Couleur sombre au survol pour une belle interaction */
+}
+
+.remember-me-container input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  border: 2px solid #a2b0b9; /* Gris doux pour une apparence raffinée */
+  background-color: #f5f5f5; /* Fond gris clair */
+  margin-right: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.remember-me-container input[type="checkbox"]:checked {
+  background-color: #6db7bb; /* Couleur subtile et apaisante pour la case cochée */
+  border-color: #4f9c9a; /* Légère nuance plus foncée pour le bord */
+}
+
+.remember-me-container input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(109, 183, 187, 0.5); /* Ombre légère pour l'effet focus */
+}
+
+.remember-me-container a {
+  font-size: 14px;
+  color: #6db7bb; /* Bleu doux pour le lien */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.remember-me-container a:hover {
+  color: #0c1214; /* Changement de couleur lors du survol pour plus de contraste */
+  text-decoration: underline;
+}
+
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  width: 120px;
+  height: auto;
+}
+
+.footer-login {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.return-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.return-link:hover {
+  text-decoration: underline;
+}
+
+.signup-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 1rem;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+.password-container {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #8bc3bf; /* Couleur secondaire pour l'icône */
+}
+
+.eye-icon:hover {
+  color: #0c1214; /* Couleur principale pour l'icône au survol */
+}
+
+
+

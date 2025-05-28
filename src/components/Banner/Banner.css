@@ -1,0 +1,39 @@
+.banner {
+    position: relative;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5c115fec9d5abbba78a23c93/1723402001653-T51ESG2EV5A7B8DSF70A/unsplash-image-PhYq704ffdA.jpg?format=1500w');
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .banner-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+  }
+  
+  .banner h1 {
+    font-size: 2.2rem; /* Taille du titre */
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }

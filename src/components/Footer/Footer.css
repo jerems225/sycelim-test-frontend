@@ -1,0 +1,35 @@
+:root {
+    --border-color: black;
+}
+
+footer {
+    width: 100%;
+    min-height: 5vh;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0f151576;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  
+  
+  .footer p {
+    margin: 0;
+    font-weight: 400;
+  }
+  
+  .footer p a {
+    color: #4CAF50; /* Accent en vert pour les liens, si tu souhaites ajouter des liens plus tard */
+    text-decoration: none;
+  }
+  
+  .footer p a:hover {
+    text-decoration: underline;
+  }
