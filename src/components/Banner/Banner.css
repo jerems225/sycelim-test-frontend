@@ -6,7 +6,7 @@
     justify-content: center;
     color: white;
     text-align: center;
-    background-image: url('https://uploads.prod01.london.platform-os.com/instances/831/assets/images/What%20Makes%20a%20Building%20a%20Skyscraper%20by%20Fred%20Mills%20via%20The%20B1M.jpg?updated=1605539718');
+    background-image: url('../../../public/banner/banner_real.jpg');
     background-position: center center;
     background-size: cover;
 }
