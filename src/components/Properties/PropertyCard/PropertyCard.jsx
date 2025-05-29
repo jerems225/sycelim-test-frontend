@@ -15,7 +15,7 @@ const PropertyCard = ({ property }) => {
     <>
       <div className="card" key={property.id}>
         <div className="card-image">
-            <img src="/cover.jpg" alt="Image de couverture" />
+            <img src={property.cover} alt="Image de couverture" />
         </div>
         <div className="card-content">
           <h3 className="card-title">{property.title}</h3>
