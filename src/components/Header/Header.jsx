@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from '../../assets/logos/hoazis_trans.png';
 import "./Header.css";
@@ -8,12 +8,20 @@ const Header = () => {
     const user = useAuth();
     console.log(user)
     const [menuOpen, setMenuOpen] = useState(false);
-
     const toggleMenu = () => setMenuOpen(!menuOpen);
     const closeMenu = () => setMenuOpen(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
-        <header className="header">
+        <header className={`header ${scrolled ? 'scrolled' : ''}`}>
             <div className="logo">
                 <Link to="/" aria-label="Page d'accueil">
                     <img src={Logo} alt="Logo" className="logo-img" />
