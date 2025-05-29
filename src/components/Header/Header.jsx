@@ -36,7 +36,7 @@ const Header = () => {
                             <li><Link to="/signup" onClick={closeMenu}>Sign Up</Link></li>
                         </>
                     ) : (
-                        <Link onClick={() => { user.logout(); closeMenu(); }} className="auth-link">Log Out</Link>
+                        <li><Link onClick={() => { user.logout(); closeMenu(); }}>Log Out</Link></li>
                     )}
                 </ul>
             </nav>
