@@ -6,6 +6,7 @@ import { useAuth } from "../../context/AuthContext";
 
 const Header = () => {
     const user = useAuth();
+    console.log(user)
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => setMenuOpen(!menuOpen);

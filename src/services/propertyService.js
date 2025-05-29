@@ -15,6 +15,5 @@ export const fetchProperties = async () => {
     throw new Error('Failed to fetch properties');
   }
   const data = await response.json();
-  console.log(data)
   return data.data;
 };
