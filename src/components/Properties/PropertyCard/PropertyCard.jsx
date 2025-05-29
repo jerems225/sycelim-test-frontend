@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import './PropertyCard.css'
-import { standard } from '../../assets/standard'
 
 const PropertyCard = ({ property }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -17,7 +16,7 @@ const PropertyCard = ({ property }) => {
       <div className="card" key={property.id}>
         <div className="card-image">
             <img
-              src={property.cover ? property.cover : standard}
+              src={property.cover ? property.cover : "assets/standard.jpg"}
               alt="Image de couverture"
             />
         </div>
