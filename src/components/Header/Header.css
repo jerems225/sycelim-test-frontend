@@ -14,6 +14,10 @@ header {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+.hide-menu {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -198,6 +202,10 @@ body {
     align-items: flex-start;
     padding: 10px;
   }
+
+.hide-menu {
+  display: block;
+}
 
   .auth-links {
     display: none;

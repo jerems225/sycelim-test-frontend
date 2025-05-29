@@ -41,11 +41,11 @@ const Header = () => {
                     <li><Link to="/contact" onClick={closeMenu}>Contact Us</Link></li>
                     {user && !user.isAuthenticated ? (
                         <>
-                            <li><Link to="/login" onClick={closeMenu}>Login</Link></li>
-                            <li><Link to="/signup" onClick={closeMenu}>Sign Up</Link></li>
+                            <li className="hide-menu"><Link to="/login" onClick={closeMenu}>Login</Link></li>
+                            <li className="hide-menu"><Link to="/signup" onClick={closeMenu}>Sign Up</Link></li>
                         </>
                     ) : (
-                        <li><Link onClick={() => { user.logout(); closeMenu(); }}>Log Out</Link></li>
+                        <li className="hide-menu"><Link onClick={() => { user.logout(); closeMenu(); }}>Log Out</Link></li>
                     )}
                 </ul>
             </nav>

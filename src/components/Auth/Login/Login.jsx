@@ -75,7 +75,7 @@ const Login = () => {
                 </div>
             </div>
             <footer className="footer-login">
-                <Link to="/" className="return-link">Return to Spadex</Link>
+                <Link to="/" className="return-link">Return to Home</Link>
                 <Link to="/signup" className="signup-link">Sign Up</Link>
             </footer>
         </div>

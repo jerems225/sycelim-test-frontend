@@ -88,7 +88,7 @@ const Register = () => {
                 </div>
             </div>
             <footer className="footer-login">
-                <Link to="/" className="return-link">Return to Spadex</Link>
+                <Link to="/" className="return-link">Return to Home</Link>
                 <Link to="/login" className="signup-link">Sign In</Link>
             </footer>
         </div>
