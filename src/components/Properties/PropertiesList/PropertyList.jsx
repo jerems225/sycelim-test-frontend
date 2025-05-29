@@ -34,7 +34,7 @@ const PropertyList = () => {
     });
 
     return (
-        <section className="card-list">
+        <section className="card-list" id="properties">
             <h2 className="section-title">Our Properties</h2>
 
             <div className="tags-container">

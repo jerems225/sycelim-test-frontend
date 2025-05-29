@@ -7,7 +7,7 @@ const Banner = () => {
             <div className="banner-content">
                 <h1>Find Your Dream Home</h1>
                 <p>Apartments, villas, and lands available across the world</p>
-                <a href="#listings" className="btn-primary">Browse Properties</a>
+                <a href="#properties" className="auth-link banner_button">Browse Properties</a>
             </div>
         </section>
     );
