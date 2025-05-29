@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 import { fetchCategories, fetchProperties } from "../../../services/propertyService";
 import PropertyCard from "../PropertyCard/PropertyCard";
 import './PropertyList.css';
+import Loader from "../../Loader/Loader";
 
 const PropertyList = () => {
     const [categories, setCategories] = useState([]);
     const [properties, setProperties] = useState([]);
     const [selectedTag, setSelectedTag] = useState('all');
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -19,6 +21,8 @@ const PropertyList = () => {
                 setProperties(fetchedProperties);
             } catch (error) {
                 console.error('Error loading properties or categories:', error);
+            } finally {
+                setLoading(false);
             }
         };
 
@@ -52,9 +56,14 @@ const PropertyList = () => {
             </div>
 
             <div className="cards-container">
-                {filteredProperties.map(property => (
-                    <PropertyCard property={property} key={property.id} />
-                ))}
+                {loading ? (
+                    <Loader />
+                ) : (
+                    filteredProperties.map(property => (
+                        <PropertyCard property={property} key={property.id} />
+                    ))
+                )}
+
             </div>
         </section>
     );
